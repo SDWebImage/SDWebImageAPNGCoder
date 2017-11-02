@@ -9,7 +9,14 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+This is a demo to show how to build animated coder which use coder helper from SDWebImage. Althrough this code is nearly same with GIF coder, but it can be a good demo to look in.
+
 ## Requirements
+
++ iOS 8
++ macOS 10.10
++ tvOS 9.0
++ watchOS 2.0
 
 ## Installation
 
@@ -20,9 +27,23 @@ it, simply add the following line to your Podfile:
 pod 'SDWebImageAPNGCoder'
 ```
 
+## Usage
+
+```objective-c
+SDWebImageAPNGCoder *APNGCoder = [SDWebImageAPNGCoder sharedCoder];
+[[SDWebImageCodersManager sharedInstance] addCoder:APNGCoder];
+UIImageView *imageView;
+NSURL *APNGURL;
+[imageView sd_setImageWithURL:APNGURL];
+```
+
+## Screenshot
+
+<img src="https://raw.githubusercontent.com/SDWebImage/SDWebImageAPNGCoder/master/Example/Screenshot/APNGDemo.png" width="300" />
+
 ## Author
 
-DreamPiggy, lizhuoli1126@126.com
+DreamPiggy
 
 ## License
 
