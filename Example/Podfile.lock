@@ -1,0 +1,34 @@
+PODS:
+  - Expecta (1.0.6)
+  - SDWebImage/Core (4.2.1)
+  - SDWebImageAPNGCoder (0.1.0):
+    - SDWebImage/Core (> 4.2)
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta
+  - SDWebImage/Core (from `git@github.com:rs/SDWebImage.git`, branch `master`)
+  - SDWebImageAPNGCoder (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  SDWebImage:
+    :branch: master
+    :git: git@github.com:rs/SDWebImage.git
+  SDWebImageAPNGCoder:
+    :path: ../
+
+CHECKOUT OPTIONS:
+  SDWebImage:
+    :commit: b2e5317666957175bfc442fff2d7440eb92a49cf
+    :git: git@github.com:rs/SDWebImage.git
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  SDWebImage: 1fa4c9edf525b744f002db89f3f5a38b3cd4c541
+  SDWebImageAPNGCoder: 8500a64549b57aeb4c408639c8d332db96e2f333
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: d888390fb72183fffef183aa3892df8974018564
+
+COCOAPODS: 1.2.1
