@@ -11,6 +11,13 @@
 #import <SDWebImage/SDWebImageFrame.h>
 #import <SDWebImage/SDWebImageCoderHelper.h>
 
+// iOS 8 Image/IO framework binary does not contains these APNG contants, so we define them. Thanks Apple
+#if (__IPHONE_OS_VERSION_MIN_REQUIRED && __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_9_0)
+const CFStringRef kCGImagePropertyAPNGLoopCount = (__bridge CFStringRef)@"LoopCount";
+const CFStringRef kCGImagePropertyAPNGDelayTime = (__bridge CFStringRef)@"DelayTime";
+const CFStringRef kCGImagePropertyAPNGUnclampedDelayTime = (__bridge CFStringRef)@"UnclampedDelayTime";
+#endif
+
 @implementation SDWebImageAPNGCoder
 
 + (instancetype)sharedCoder
@@ -101,11 +108,11 @@
     NSDictionary *frameProperties = (__bridge NSDictionary *)cfFrameProperties;
     NSDictionary *pngProperties = frameProperties[(NSString *)kCGImagePropertyPNGDictionary];
     
-    NSNumber *delayTimeUnclampedProp = pngProperties[(NSString *)kCGImagePropertyAPNGUnclampedDelayTime];
+    NSNumber *delayTimeUnclampedProp = pngProperties[(__bridge_transfer NSString *)kCGImagePropertyAPNGUnclampedDelayTime];
     if (delayTimeUnclampedProp) {
         frameDuration = [delayTimeUnclampedProp floatValue];
     } else {
-        NSNumber *delayTimeProp = pngProperties[(NSString *)kCGImagePropertyAPNGDelayTime];
+        NSNumber *delayTimeProp = pngProperties[(__bridge_transfer NSString *)kCGImagePropertyAPNGDelayTime];
         if (delayTimeProp) {
             frameDuration = [delayTimeProp floatValue];
         }

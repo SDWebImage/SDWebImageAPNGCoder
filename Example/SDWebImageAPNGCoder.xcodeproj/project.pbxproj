@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		360BEC86CA387BAB941E23EA /* Pods-SDWebImageAPNGCoder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageAPNGCoder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Tests/Pods-SDWebImageAPNGCoder_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3A2989A84FFF42BC700897CD /* Pods_SDWebImageAPNGCoder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageAPNGCoder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DB59C2225AB85112652C6E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4DB59C2225AB85112652C6E6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		583531AF715A2AD680912BE2 /* Pods-SDWebImageAPNGCoder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageAPNGCoder_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Example/Pods-SDWebImageAPNGCoder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5A5E7BCF158D5F64B7A266B3 /* Pods_SDWebImageAPNGCoder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDWebImageAPNGCoder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SDWebImageAPNGCoder_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDWebImageAPNGCoder_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,8 +65,8 @@
 		827FBAD1D18693568A078328 /* Pods-SDWebImageAPNGCoder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageAPNGCoder_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Tests/Pods-SDWebImageAPNGCoder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86F56AE7E4B5A90FE9295B9F /* Pods-SDWebImageAPNGCoder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDWebImageAPNGCoder_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Example/Pods-SDWebImageAPNGCoder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		976F27C1D824C95C7A085686 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DAB299D0D92A4AE321269288 /* SDWebImageAPNGCoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SDWebImageAPNGCoder.podspec; path = ../SDWebImageAPNGCoder.podspec; sourceTree = "<group>"; };
+		976F27C1D824C95C7A085686 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DAB299D0D92A4AE321269288 /* SDWebImageAPNGCoder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SDWebImageAPNGCoder.podspec; path = ../SDWebImageAPNGCoder.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +512,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
