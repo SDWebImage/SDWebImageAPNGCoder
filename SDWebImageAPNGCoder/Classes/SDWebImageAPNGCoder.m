@@ -71,14 +71,11 @@ const CFStringRef kCGImagePropertyAPNGUnclampedDelayTime = (__bridge CFStringRef
             }
             
             float duration = [self sd_frameDurationAtIndex:i source:source];
-#if SD_WATCH
-            CGFloat scale = 1;
-            scale = [WKInterfaceDevice currentDevice].screenScale;
-#elif SD_UIKIT
-            CGFloat scale = 1;
-            scale = [UIScreen mainScreen].scale;
+#if SD_MAC
+            UIImage *image = [[UIImage alloc] initWithCGImage:imageRef size:NSZeroSize];
+#else
+            UIImage *image = [[UIImage alloc] initWithCGImage:imageRef];
 #endif
-            UIImage *image = [UIImage imageWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
             CGImageRelease(imageRef);
             
             SDWebImageFrame *frame = [SDWebImageFrame frameWithImage:image duration:duration];
@@ -90,7 +87,7 @@ const CFStringRef kCGImagePropertyAPNGUnclampedDelayTime = (__bridge CFStringRef
         NSDictionary *pngProperties = [imageProperties valueForKey:(__bridge_transfer NSString *)kCGImagePropertyPNGDictionary];
         if (pngProperties) {
             NSNumber *apngLoopCount = [pngProperties valueForKey:(__bridge_transfer NSString *)kCGImagePropertyAPNGLoopCount];
-            if (apngLoopCount) {
+            if (apngLoopCount != nil) {
                 loopCount = apngLoopCount.unsignedIntegerValue;
             }
         }
@@ -111,11 +108,11 @@ const CFStringRef kCGImagePropertyAPNGUnclampedDelayTime = (__bridge CFStringRef
     NSDictionary *pngProperties = frameProperties[(NSString *)kCGImagePropertyPNGDictionary];
     
     NSNumber *delayTimeUnclampedProp = pngProperties[(__bridge_transfer NSString *)kCGImagePropertyAPNGUnclampedDelayTime];
-    if (delayTimeUnclampedProp) {
+    if (delayTimeUnclampedProp != nil) {
         frameDuration = [delayTimeUnclampedProp floatValue];
     } else {
         NSNumber *delayTimeProp = pngProperties[(__bridge_transfer NSString *)kCGImagePropertyAPNGDelayTime];
-        if (delayTimeProp) {
+        if (delayTimeProp != nil) {
             frameDuration = [delayTimeProp floatValue];
         }
     }
