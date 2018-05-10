@@ -3,7 +3,6 @@ use_frameworks!
 
 target 'SDWebImageAPNGCoder_Example' do
   pod 'SDWebImageAPNGCoder', :path => '../'
-  pod 'SDWebImage/Core',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
 
   target 'SDWebImageAPNGCoder_Tests' do
     inherit! :search_paths

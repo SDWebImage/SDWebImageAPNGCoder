@@ -10,6 +10,8 @@
 #import <SDWebImage/UIImage+MultiFormat.h>
 #import <SDWebImage/SDWebImageFrame.h>
 #import <SDWebImage/SDWebImageCoderHelper.h>
+#import <SDWebImage/NSImage+WebCache.h>
+#import <ImageIO/ImageIO.h>
 
 // iOS 8 Image/IO framework binary does not contains these APNG contants, so we define them. Thanks Apple
 #if (__IPHONE_OS_VERSION_MIN_REQUIRED && __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_9_0)
