@@ -208,7 +208,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				737A67A24AE32341C7BCA551 /* [CP] Embed Pods Frameworks */,
-				82C0CB228E62D6C641EBDA53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +227,6 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				34AA1132454EA3E5A94794B0 /* [CP] Embed Pods Frameworks */,
-				4A29ACD891B83B1DB173C9CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -335,21 +333,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Tests/Pods-SDWebImageAPNGCoder_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A29ACD891B83B1DB173C9CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Tests/Pods-SDWebImageAPNGCoder_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		53C99FAE83D34B90C0B411C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,21 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Example/Pods-SDWebImageAPNGCoder_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		82C0CB228E62D6C641EBDA53 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SDWebImageAPNGCoder_Example/Pods-SDWebImageAPNGCoder_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

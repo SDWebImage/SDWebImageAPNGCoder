@@ -10,16 +10,22 @@ DEPENDENCIES:
   - SDWebImageAPNGCoder (from `../`)
   - Specta
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Expecta
+    - SDWebImage
+    - Specta
+
 EXTERNAL SOURCES:
   SDWebImageAPNGCoder:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
-  SDWebImageAPNGCoder: 9b8f24d1e7c47c44c5fd45f26ff66aae1ac44395
+  SDWebImageAPNGCoder: 3308255d7f38f6e6e9376cfe3a1eb7c05a3f63d0
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: c48847c3f7b84ae1a5c5b27d0d9e53f6eabe8175
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
