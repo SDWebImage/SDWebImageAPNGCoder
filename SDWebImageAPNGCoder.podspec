@@ -18,11 +18,9 @@ In 5.x, SDWebImage will replace this as built-in APNG coder instead
                        DESC
 
   s.homepage         = 'https://github.com/SDWebImage/SDWebImageAPNGCoder'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'DreamPiggy' => 'lizhuoli1126@126.com' }
   s.source           = { :git => 'https://github.com/SDWebImage/SDWebImageAPNGCoder.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
@@ -32,10 +30,4 @@ In 5.x, SDWebImage will replace this as built-in APNG coder instead
   s.source_files = 'SDWebImageAPNGCoder/Classes/**/*'
   s.dependency 'SDWebImage/Core', '~> 4.2'
   
-  # s.resource_bundles = {
-  #   'SDWebImageAPNGCoder' => ['SDWebImageAPNGCoder/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
 end
