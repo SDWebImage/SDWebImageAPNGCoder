@@ -1,6 +1,6 @@
 # SDWebImageAPNGCoder
 
-[![CI Status](http://img.shields.io/travis/SDWebImage/SDWebImageAPNGCoder.svg?style=flat)](https://travis-ci.org/dreampiggy/SDWebImageAPNGCoder)
+[![CI Status](http://img.shields.io/travis/SDWebImage/SDWebImageAPNGCoder.svg?style=flat)](https://travis-ci.org/SDWebImage/SDWebImageAPNGCoder)
 [![Version](https://img.shields.io/cocoapods/v/SDWebImageAPNGCoder.svg?style=flat)](http://cocoapods.org/pods/SDWebImageAPNGCoder)
 [![License](https://img.shields.io/cocoapods/l/SDWebImageAPNGCoder.svg?style=flat)](http://cocoapods.org/pods/SDWebImageAPNGCoder)
 [![Platform](https://img.shields.io/cocoapods/p/SDWebImageAPNGCoder.svg?style=flat)](http://cocoapods.org/pods/SDWebImageAPNGCoder)
