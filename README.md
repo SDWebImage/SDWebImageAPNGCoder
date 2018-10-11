@@ -13,8 +13,8 @@ This is a demo to show how to build animated coder which use coder helper from S
 
 ## Requirements
 
-+ iOS 8
-+ macOS 10.10
++ iOS 7
++ macOS 10.9
 + tvOS 9.0
 + watchOS 2.0
 
