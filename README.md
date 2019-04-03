@@ -5,6 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/SDWebImageAPNGCoder.svg?style=flat)](http://cocoapods.org/pods/SDWebImageAPNGCoder)
 [![Platform](https://img.shields.io/cocoapods/p/SDWebImageAPNGCoder.svg?style=flat)](http://cocoapods.org/pods/SDWebImageAPNGCoder)
 
+## Note
+
+The [APNG](https://en.wikipedia.org/wiki/APNG) format coder plugin, is already one of built-in plugins in SDWebImage 5.0. To support APNG format, use `SDImageAPNGCoder` class instead.
+
+This repo is deprecated and only support SDWebImage 4.x version.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -48,3 +54,5 @@ DreamPiggy
 ## License
 
 SDWebImageAPNGCoder is available under the MIT license. See the LICENSE file for more info.
+
+
