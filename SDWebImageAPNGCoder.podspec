@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SDWebImageAPNGCoder'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'APNG decoder/encoder for SDWebImage coder plugin.'
 
   s.description      = <<-DESC
